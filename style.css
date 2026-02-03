@@ -1,0 +1,80 @@
+button{
+    background-color: antiquewhite;
+    color: brown;
+    border: 2px dotted brown;
+    padding: 30px;
+    transition: 0.9s ease-in-out;
+}
+button:hover{
+    background-color: rgb(177, 45, 45);
+    color: antiquewhite;
+    border: 2px dotted antiquewhite;
+}
+
+.card{
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    color: antiquewhite;
+    border: 2px dotted antiquewhite;
+    transition: 0.9s ease-in-out;
+}
+.card:hover{
+    background-color: antiquewhite;
+    color: brown;
+    border: 2px dotted brown;
+    padding: 30px;
+    width: 210px;
+    height: 110px;
+}
+
+
+
+@keyframes piscar {
+    0% {opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.bot{
+    animation: piscar 1s infinite;
+}
+
+
+@keyframes colorido{
+    0% {background-color: brown;}
+    25%{background-color: rgb(183, 0, 255);}
+    50%{background-color: blue;}
+    75%{background-color: rgb(0, 255, 55);}
+    80%{background-color: rgb(229, 255, 0);}
+    100%{background-color: brown;}
+}
+
+.coloridinho{
+    animation: colorido 4s infinite;
+
+}
+
+@keyframes girar {
+    from{transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.roda-regina{
+    animation: girar 1s infinite linear;
+}
+
+.roda-regina:hover{
+    animation-play-state: paused;
+}
+
+@keyframes anda {
+    0%{left: 0;}
+    50%{left:750px;}
+    100%{left: 0px;}
+    
+}
+
+.piu{
+    position: relative;
+    animation: anda 10s infinite;
+}
