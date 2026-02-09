@@ -68,10 +68,21 @@ button:hover{
 }
 
 @keyframes anda {
-    0%{left: 0;}
-    50%{left:750px;}
-    100%{left: 0px;}
     
+    0%{ left: 0px;
+    transform: scaleX(1);}
+
+    48%{ left: 900px;
+    transform: scaleX(1);}
+    
+    50%{ left: 900px;
+    transform: scaleX(-1);}
+    
+    98%{ left: 0px;
+    transform: scaleX(-1);}
+    100%{ left: 0px;
+    transform: scaleX(1);}
+
 }
 
 .piu{
